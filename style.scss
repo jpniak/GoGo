@@ -1,0 +1,224 @@
+//variables -colors
+$blue-color: #215398;
+$light-color: #F1F6FC;
+$white-color: white;
+
+
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif; 
+  font-size: 15px;
+  line-height: 24px;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px; 
+  line-height: 52px;
+}
+
+h2 { 
+  text-align: center; 
+  font-size: 30px; 
+  line-height: 30px; 
+  padding-bottom: 10px;
+}
+
+h3 { 
+  text-align: center;
+}
+
+p { 
+  text-align: center;
+  font-size: 20px; 
+  line-height: 32px
+}
+
+
+/* logo */
+
+.logo {
+  background-color: $white-color;
+  height: 7vh;
+}
+
+
+/* blueSection */
+
+.blueSection {
+  color: white;
+  background-color: $blue-color;
+  height: 43vh;
+  min-height: 320px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+
+}
+
+.blueSection .whiteBoxWrapper {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.blueSection button {width: 20px; height: 20px; margin:0; padding: 0}
+
+.blueSection p {padding-bottom: 20px; font-size: 15px;line-height: 24px;}
+
+/* slider buttons prev, next */
+
+button.fa {
+  transform: translateY(75px);
+  background-color: #215398;
+  color: lightblue;
+  border: none;
+  border-radius: 50%} 
+
+button.fa:hover {
+  background: royalblue;
+}
+
+/* dot */
+
+.dot {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background: #FF3859;
+  box-shadow: 0px 4px 4px rgba(255, 56, 89, 0.2);
+}
+
+
+/* lightSection */
+
+.lightSection {
+  background-color: $light-color;
+  height: 50vh;
+  min-height: 320px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.lightSection p {
+  padding-bottom: 20px; 
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.container {
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 ;
+}
+
+.whiteBoxWrapper {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.whiteBox {
+  width: 250px;
+  height: 175px;
+  background: white;
+   
+}
+
+.whiteBox h3{
+  padding-top: 20px;
+  color: black;
+}
+.whiteBox p {
+  padding: 5px 5px;
+  color: black;
+}
+
+i.fa-wordpress {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  height:50px; 
+  width: 50px; 
+  font-size: 40px
+}
+
+
+/* Media */
+
+@media (max-width: 400px) {
+  
+  body {font-size: 10px; line-height: 18px; }
+
+  h1 {font-size: 30px; line-height: 42px;}
+
+  h2 {font-size: 20px; line-height: 30px; padding-bottom: 10px;}
+
+  h3 {font-size: 18px;}
+
+  .whiteBoxWrapper {flex-direction: column;} 
+    
+  .whiteBox {margin: 10px auto}
+  
+  .lightSection {height: 100vh;}
+  
+  .lightSection p {font-size: 12px; line-height: 16px};
+  
+  .blueSection {height: 100vh;}
+  
+  .blueSection p {font-size: 12px; line-height: 16px};
+  
+  .dot {display: none;}
+  
+  button.fa {position: absolute; top: 50%; background-color: #215398; border-radius: 50%;} 
+  
+  button.prev {left: 5%;}
+  
+  button.next {right: 5%;}
+  
+  
+  
+
+}
+
+
+@media (max-width: 800px) {
+  
+  .whiteBoxWrapper {flex-direction: column;  margin: 10px auto}
+  
+  .whiteBox {margin: 10px auto; height: 160px;}
+  
+  .lightSection {min-height: 800px;}
+  
+  .blueSection {min-height: 800px;}
+  
+  .dot {display: none;}
+  
+  button.fa {position: absolute; top: 50%; background-color: #215398; border-radius: 50%;} 
+  
+  button.prev {left: 5%;}
+  
+  button.next {right: 5%;}
+  
+}
