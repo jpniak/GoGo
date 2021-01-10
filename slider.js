@@ -44,5 +44,20 @@ function sliderNext() {
   
 }
 
+function keyChangeSlide(event) {
+  switch (event.keyCode){
+    case 37: 
+      sliderPrev();
+      break;
+    
+    case 39:
+      sliderNext();
+      break;
+  }
+  
+}
+
+
 document.getElementById('prev').addEventListener('click', sliderPrev);
 document.getElementById('next').addEventListener('click', sliderNext);
+window.addEventListener('keydown', keyChangeSlide);
